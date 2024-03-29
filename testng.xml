@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <listeners>
+<listener class-name="utilities.listenerReport">
+</listener>
+</listeners>
+<test  name="Test1">
+<classes>
+<class name="testcases.Tc1_city"/>
+<class name="testcases.Tc2_clicksports"/>
+<class name="testcases.Tc3_movies"/>
+<class name="testcases.Tc4_clickSignin"/>
+</classes>
+</test>
+  
+</suite> <!-- Suite -->
