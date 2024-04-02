@@ -1,4 +1,5 @@
 package pageobjectfactory;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -26,12 +27,14 @@ public class movieTickets {
 		   Thread.sleep(3000);
 	   }
 	   
-	   public void language()
+	  
+	   public void movie_language() throws InterruptedException, IOException
 	   {
-		   for(WebElement elm:lstLanguage) 
-		   {
-			   System.out.println(elm.getText());
-		   }
+		   Thread.sleep(5000);
+		   Exceldata excel =new Exceldata();
+		   excel.createExcelFile("/excelsheet/myExcelSheetLanguage.xlsx");
+		   excel.fillExcelFileLanguage(lstLanguage);
+
 	   }
 
 }

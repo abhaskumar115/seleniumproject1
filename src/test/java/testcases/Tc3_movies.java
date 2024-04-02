@@ -1,5 +1,7 @@
 package testcases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 import pageobjectfactory.movieTickets;
 
@@ -19,8 +21,8 @@ public class Tc3_movies {
 	  }
 	  
 	  @Test(priority=2)
-	  public void test2()
+	  public void test2() throws InterruptedException, IOException
 	  {
-		  mt.language();
+		  mt.movie_language();
 	  }
 }

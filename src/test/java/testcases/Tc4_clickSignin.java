@@ -35,6 +35,7 @@ public class Tc4_clickSignin {
 	  public void test4() throws InterruptedException 
 	  {
 		  s.clickNext();
+		  Thread.sleep(3000);
 	  }
 
 	  @DataProvider
