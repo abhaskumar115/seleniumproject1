@@ -33,6 +33,7 @@ public class Exceldata {
 		   for(int i=0;i<data.size();i++) {
 			   XSSFRow row1 = sheet.createRow(i);
 			   row1.createCell(0).setCellValue(data.get(i).getText());
+			   
 		   }
 		 workbook.write(file);
 		   workbook.close();
