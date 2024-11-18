@@ -34,9 +34,10 @@ public class Exceldata {
 			   XSSFRow row1 = sheet.createRow(i);
 			   row1.createCell(0).setCellValue(data.get(i).getText());
 		   }
-		   workbook.write(file);
+		 workbook.write(file);
 		   workbook.close();
 		   file.close();
+		   
 	}
 
 }
